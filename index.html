@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vales Especiales - Regalo de Reyes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="main-title">Regalitos de Reyes</h1>
+			<p class="dedication">Este año los Reyes Magos han llegado también en formato virtual 
+				ya que no han podido acudir presencialmente a todas las casas esta noche.</p>
+            <p class="dedication">Pero han querido dejar regalitos con tu nombre en "casa" de tu amorcito.</p>
+			<p class="dedication">Al no tener una "casa" como tal en la que estar y poder guardar esos regalitos
+				la noche de Reyes, irán apareciendo mágicamente para alargar el espíritu navideño y la ilusión por
+				los regalos (que saben que te encanta).</p>
+			<p class="dedication">A continuación, tienes una serie de sobres para abrir tus regalitos y desvelar
+				las sorpresas.</p>
+			<p class="subtitle">Haz clic en cada sobre para descubrir tu regalito</p>
+        </header>
+
+        <div class="envelopes-grid first-row">
+            <!-- Sobre 1 -->
+            <div class="envelope-container">
+                <div class="envelope" data-envelope="1">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-front">
+                        <div class="envelope-seal"></div>
+                    </div>
+                </div>
+                <div class="voucher hidden" id="voucher-1">
+                    <div class="voucher-content">
+                        <h3>Vale por una serie de regalitos que están de camino</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobre 2 -->
+            <div class="envelope-container">
+                <div class="envelope" data-envelope="2">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-front">
+                        <div class="envelope-seal"></div>
+                    </div>
+                </div>
+                <div class="voucher hidden" id="voucher-2">
+                    <div class="voucher-content">
+                        <h3>Vale por un regalo "artesanal"</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle-text">
+            <p>Ahora te toca elegir</p>
+        </div>
+
+        <div class="dedication">
+            <p>Los vales sorpresa de antes están en camino así que son asegurados. Peeeeeero, ademáaaaaas, a continuación
+                hay otros 3 vales. Como los Reyes saben que no te gustan los regalos ni las sorpresas, este año te dejan 
+                elegir uno para que no les pongas pegas. Sé que los 3 son muy tentadores y no me vas a dejar regalarte 
+                ninguno, pero te aguantas y eliges. Cada uno tiene sus pros y sus contras, así que no hay prisa por elegir y
+                puedes pedir consejo. Pero repito, te aguantas y eliges uno, o eligo yo por ti.
+            </p>
+        </div>
+
+        <div class="envelopes-grid second-row">
+            <!-- Sobre 3 -->
+            <div class="envelope-container">
+                <div class="envelope" data-envelope="3">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-front">
+                        <div class="envelope-seal"></div>
+                    </div>
+                </div>
+                <div class="voucher hidden" id="voucher-3">
+                    <div class="voucher-content">
+                        <h3>Vale por unos pantalones para la moto</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobre 4 -->
+            <div class="envelope-container">
+                <div class="envelope" data-envelope="4">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-front">
+                        <div class="envelope-seal"></div>
+                    </div>
+                </div>
+                <div class="voucher hidden" id="voucher-4">
+                    <div class="voucher-content">
+                        <h3>Vale por un Puf</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobre 5 -->
+            <div class="envelope-container">
+                <div class="envelope" data-envelope="5">
+                    <div class="envelope-back"></div>
+                    <div class="envelope-front">
+                        <div class="envelope-seal"></div>
+                    </div>
+                </div>
+                <div class="voucher hidden" id="voucher-5">
+                    <div class="voucher-content">
+                        <h3>Vale por un día en la nieve</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="instructions">
+            <p>💡 <strong>Consejo:</strong> Guarda esta página en tus favoritos para acceder a tus vales cuando quieras</p>
+        </div> -->
+    </div>
+
+    <!-- Modal para ver el vale completo -->
+    <div class="modal hidden" id="voucherModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-voucher-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
