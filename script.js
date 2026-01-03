@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 instructionsText = `
                     <div class="instructions-text">
                         <p><strong>Descripción:</strong></p>
-                        <p>Esta opción sería un regalo a futuro, ya que te llegaría cuando esté contento con tu talla.</p>
+                        <p>Esta opción sería un regalo a futuro, ya que te llegaría cuando estés contento con tu talla.</p>
                     </div>
                 `;
                 break;
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="instructions-text">
                         <p><strong>Descripción:</strong></p>
                         <p>Este regalo se pensó antes de que encontraras el de la barura. No obstante, como no tenemos casita donde
-                        ponerlo, sería para la Noria o a futuro tambień.</p>
+                        ponerlo, sería para la Noria o a futuro también.</p>
                     </div>
                 `;
                 break;
